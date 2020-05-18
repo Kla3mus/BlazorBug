@@ -1,0 +1,16 @@
+﻿@page "/counter_e"
+
+<h1>Counter Extern</h1>
+
+<p>Current Extern count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount"> Extern Click me</button>
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}
